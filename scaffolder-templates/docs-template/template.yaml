@@ -49,7 +49,7 @@ spec:
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
-              - gitlab.com
+              - git.gravity.porsche.com
 
   # This template is meant to be used on top of an existing tmeplate.
   # By adding the following and fetching from an absolute URL you can 
@@ -68,9 +68,9 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:github
+      action: publish:gitlab
       input:
-        allowedHosts: ['gitlab.com']
+        allowedHosts: ['git.gravity.porsche.com']
         description: 'This is {{ parameters.component_id }}'
         repoUrl: '{{ parameters.repoUrl }}'
 
